@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marconi Aragão Arquitetura - Projetos Residenciais em João Pessoa</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="IMG/maa-avatar-01.png" alt="Logo Marconi Aragão" class="logo" />
+                <span class="nome-escritorio">Marconi Aragão Arquitetura</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>Projetos Residenciais que Transformam Sonhos em Lares em João Pessoa</h1>
+            <p>Desde 2012, criando espaços únicos e funcionais para famílias como a sua.</p>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Nosso Portfólio de Destaque</h2>
+            <p>Inspire-se em alguns dos projetos residenciais que realizamos em João Pessoa e região.</p>
+            <div class="grid-portfolio">
+                <div class="projeto">
+                    <img src="IMG/projeto1/03.png" alt="Escritório à Beira-Mar" class="img-ampliavel">
+                    <div class="projeto-info">
+                        <h3>Escritório - CM Construtora</h3>
+                        <p>Escritório localizado no bairro de Manaíra em João Pessoa, este escritório combina design contemporâneo com a beleza da orla, trazendo a tonalidade da areia da praia para o local de trabalho.</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="IMG/projeto3/projeto_3.png" alt="Home office da paz" class="img-ampliavel">
+                    <div class="projeto-info">
+                        <h3>Escritório WEB Development</h3>
+                        <p>Home office executado para desenvolverdor web que presta serviço Work from Home. O designer com textura de madeira e cores neutras ajudam a manter a tranquilidade nas grandes jornadas de trabalho.</p>
+                        
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="IMG/projeto2/01_1.png" alt="Sala de Estar - Duplex" class="img-ampliavel">
+                    <div class="projeto-info">
+                        <h3>Duplex Urbano com Design Inovador</h3>
+                        <p>Solução inteligente com utilização de paineis de MDF para passagem de infra elétrica, com foco em funcionalidade e estilo.</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="IMG/Projeto4/08a.png" alt="Home office da paz" class="img-ampliavel">
+                    <div class="projeto-info">
+                        <h3>Suíte Casal - N&T</h3>
+                        <p>
+                        Suíte projetada para um casal, com foco em conforto e sofisticação. O uso de cores neutras e iluminação suave cria um ambiente relaxante.</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="IMG/Projeto5/05.JPG" alt="Home office Design" class="img-ampliavel">
+                    <div class="projeto-info">
+                        <h3>Home Office Contemporâneo</h3>
+                        <p>Executado para designer de interiores que presta serviço Work from Home. O designer com textura de madeira e cores neutras ajudam a manter a tranquilidade nas grandes jornadas de trabalho.</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="IMG/Projeto6/01.png" alt="Home office da paz" class="img-ampliavel">
+                    <div class="projeto-info">
+                        <h3>Escritório WEB Development</h3>
+                        <p>Home office executado para desenvolverdor web que presta serviço Work from Home. O designer com textura de madeira e cores neutras ajudam a manter a tranquilidade nas grandes jornadas de trabalho.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="container">
+            <h2>Nossos Serviços em Arquitetura Residencial</h2>
+            <p>Oferecemos uma gama completa de serviços para transformar sua visão em realidade.</p>
+            <ul class="services-list">
+                <li><strong>Projeto Arquitetônico Completo:</strong> Criação de plantas, elevações, cortes e detalhamentos técnicos.</li>
+                <li><strong>Design de Interiores Personalizado:</strong> Ambientes que refletem seu estilo e necessidades.</li>
+                <li><strong>Consultoria em Escolha de Terrenos:</strong> Orientação para encontrar o local ideal para sua futura casa.</li>
+                <li><strong>Acompanhamento e Gerenciamento de Obras:</strong> Garantia de qualidade e cumprimento de prazos.</li>
+                <li><strong>Projetos de Reforma e Ampliação:</strong> Transforme seu lar existente com soluções criativas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contato-info">
+                <p>Avenida General Edson Ramalho, 100 Manaíra - João Pessoa, PB</p>
+                <p>Telefone: (83) 98808.2982 - Email: marconi.arquiteto@outlook.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marconi Aragão Arquitetura. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal para ampliar imagem -->
+    <div id="modal-img" class="modal-img" style="display:none;">
+        <span class="modal-close" id="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img-content" src="" alt="Imagem ampliada do projeto">
+    </div>
+    <script>
+    // Lightbox simples para ampliar imagens dos projetos
+    document.querySelectorAll('.img-ampliavel').forEach(function(img) {
+        img.addEventListener('click', function() {
+            document.getElementById('modal-img-content').src = this.src;
+            document.getElementById('modal-img').style.display = 'flex';
+        });
+    });
+    document.getElementById('modal-close').onclick = function() {
+        document.getElementById('modal-img').style.display = 'none';
+        document.getElementById('modal-img-content').src = '';
+    };
+    document.getElementById('modal-img').onclick = function(e) {
+        if(e.target === this) {
+            this.style.display = 'none';
+            document.getElementById('modal-img-content').src = '';
+        }
+    };
+    </script>
+</body>
+</html>

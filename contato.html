@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Marconi Aragão Arquitetura</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="IMG/maa-avatar-01.png" alt="Logo Marconi Aragão" class="logo" />
+                <span class="nome-escritorio">Marconi Aragão Arquitetura</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="index.html#portfolio">Portfólio</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contato" class="container">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Estamos prontos para discutir seu projeto. Agende uma conversa sem compromisso!</p>
+            <form class="contact-form" id="form-contato" autocomplete="off">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="button">Enviar Mensagem</button>
+            </form>
+            <div id="contato-feedback"></div>
+        </section>
+        <div class="contato-botoes-redes" style="display:flex; justify-content:center; gap:24px; margin-bottom:32px;">
+            <a href="https://www.instagram.com/marconi.arquiteto" target="_blank" class="botao-rede-social instagram">Instagram</a>
+            <a href="https://www.linkedin.com/in/marconiarag%C3%A3o/" target="_blank" class="botao-rede-social linkedin">LinkedIn</a>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-contato-info">
+                <p>Avenida General Edson Ramalho, 100 Manaíra - João Pessoa, PB</p>
+                <p>Telefone: (83) 98808.2982 - Email: marconi.arquiteto@outlook.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marconi Aragão Arquitetura. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+// Simulação de envio do formulário de contato (sem backend)
+document.getElementById('form-contato').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('contato-feedback').innerHTML = '<div class="contact-success">Mensagem enviada com sucesso! Obrigado pelo contato.</div>';
+    document.getElementById('form-contato').reset();
+});
+</script>
+</body>
+</html>
