@@ -555,3 +555,33 @@ footer .container {
         font-size: 2em;
     }
 }
+
+/* Reduz tamanho das fontes gerais para melhorar responsividade */
+html {
+    font-size: 15px;
+}
+body, p, h1, h2, h3, h4, h5, h6, .projeto-info, .sobre.container p, .sobre.container h1, .sobre.container h2, .contact-form label, .contact-form {
+    font-size: 1em;
+}
+
+/* Footer mantém fonte maior para destaque */
+footer, .footer-contato-info, .footer-bottom, .footer-contato-info p, .footer-bottom p {
+    font-size: 1.08em !important;
+}
+
+/* Responsividade para grid de projetos: imagens uma acima da outra no mobile */
+@media (max-width: 900px) {
+    .grid-portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .grid-portfolio {
+        grid-template-columns: 1fr;
+    }
+    .projeto img {
+        height: auto;
+        min-height: 180px;
+        max-height: 320px;
+    }
+}
