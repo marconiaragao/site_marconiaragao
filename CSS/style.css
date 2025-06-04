@@ -577,11 +577,16 @@ footer, .footer-contato-info, .footer-bottom, .footer-contato-info p, .footer-bo
 }
 @media (max-width: 600px) {
     .grid-portfolio {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+    .projeto {
+        max-width: 100% !important;
     }
     .projeto img {
-        height: auto;
-        min-height: 180px;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 120px;
         max-height: 320px;
+        display: block;
     }
 }
